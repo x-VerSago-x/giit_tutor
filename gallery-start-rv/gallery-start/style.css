@@ -1,0 +1,87 @@
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #f5deb3;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  border: 1px solid rgb(102, 102, 101);
+  position: relative;
+  width: 480px;
+  height: 640px;
+  margin: 0 auto;
+}
+.full-img {
+  position: relative;
+  width: 100%;
+  height: 75%;
+}
+.full-img img {
+  width: 100%;
+  height: 100%;
+}
+.next,
+.prev {
+  position: absolute;
+  background-color: rgba(5, 110, 114, 0.562);
+  height: 100%;
+  width: 25%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  top: 0;
+  z-index: 8;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+p {
+  font-size: 136px;
+  text-align: center;
+}
+.next:hover,
+.prev:hover {
+  opacity: 0.5;
+}
+button {
+  border-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  background: rgba(0, 0, 0, 0);
+}
+.thumb-bar {
+  /* background-color: #00f; */
+  height: 25%;
+  width: 100%;
+
+  box-sizing: border-box;
+}
+.thumb-bar img {
+  /* border: 1px solid rgb(102, 102, 101); */
+  box-sizing: border-box;
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.thumb-bar img:hover {
+  opacity: 0.5;
+}
+.select {
+  border: 5px solid #0f0;
+}
