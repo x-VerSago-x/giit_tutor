@@ -31,3 +31,4 @@ person.farewell = function () {
 let myDataName = 'height'
 let myDataValue = '1.75m'
 person[myDataName] = myDataValue
+person.bio
